@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 class ShoppingList extends React.Component {
     render(){
         return(
@@ -14,4 +13,4 @@ class ShoppingList extends React.Component {
         )
     }
 }
-ReactDOM.render(<ShoppingList/>, document.getElementById("root"))
+ReactDOM.render(ShoppingList,document.getElementById)

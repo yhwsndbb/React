@@ -1,0 +1,1 @@
+class ShoppingList exports R
