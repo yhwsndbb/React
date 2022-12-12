@@ -1,5 +1,5 @@
 import React from "react";
-import '../Hello/index.less'
+// import '../Hello/index.less'
 //创建组件
 // const title = {
 //     name:'按钮'
@@ -28,7 +28,7 @@ class Hello extends React.Component{
   }
   render(){
     return(
-      <div>
+      <div className="Underlay">
       <div>{this.state.count}</div>
     {/* <a href="http://www.baidu.com/"  onClick={this.handleClick}>{title.name}</a> */}
     <button onClick={this.onAdd}>+1</button>

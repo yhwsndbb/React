@@ -56,8 +56,17 @@ import  './css/index.less'
   <div>
     <div>123</div>
     <div className="rotate">
-      <div className="rotate-Pointer"></div>
-      <div className="rotate-circle"></div>
+      <div className="rotate-merge">
+        <div className="rotate-merge-Halfturn"></div>
+        <div className="cloth">
+          <div className="rotate-merge-Pointer"></div>
+          <div className="rotate-merge-circle"></div>
+        </div>
+      </div>
+      <div>
+        <p>1</p>
+        <p>2</p>
+      </div>
     </div>
     <Hello />
     <FromIndex/>
