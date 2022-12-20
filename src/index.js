@@ -52,12 +52,20 @@ import  './css/index.less'
   import Hello from './Hello/Hello'
   import FromIndex from "./from/index"
   import FromRef from "./from/fromRef"
+  let hourArr = [...new Array(12).keys()]
+      let grad = hourArr.map((item) => {
+        return <div key={item} className="grad" style={{transform: `rotateZ(${item*30}deg)`}}></div>
+      })
   const title = (
   <div>
     <div>123</div>
     <div className="rotate">
       <div className="rotate-merge">
-        <div className="rotate-merge-Halfturn"></div>
+        <div>
+          <div className="rotate-merge-asthenia"></div>
+          <div className="rotate-merge-Halfturn"></div>
+          <div className="rotate-merge-empty"></div>
+        </div>
         <div className="cloth">
           <div className="rotate-merge-Pointer"></div>
           <div className="rotate-merge-circle"></div>
@@ -66,6 +74,13 @@ import  './css/index.less'
       <div>
         <p>1</p>
         <p>2</p>
+      </div>
+      <div className="clock-wrapper">
+        <div className="pointer "></div>
+        {grad}
+        <div className="pointer_minute"></div>
+        <div className="garden"></div>
+        <div className="second"></div>
       </div>
     </div>
     <Hello />
